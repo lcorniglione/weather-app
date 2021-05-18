@@ -47,6 +47,20 @@ function WeatherDetails() {
   return (
     <div className="pt-6 pb-6">
       <h4 className="pb-6 text-gray-200 font-bold">Weather Details</h4>
+      <div>
+        <div className="flex flex-row justify-between pt-4 pb-4">
+          <span className="text-gray-100">Cloudy</span>
+          <span className="text-gray-100">86%</span>
+        </div>
+        <div className="flex flex-row justify-between pt-4 pb-4">
+          <span className="text-gray-100">Humidity</span>
+          <span className="text-gray-100">62%</span>
+        </div>
+        <div className="flex flex-row justify-between pt-4 pb-4">
+          <span className="text-gray-100">Wind</span>
+          <span className="text-gray-100">8km/h</span>
+        </div>
+      </div>
     </div>
   );
 }

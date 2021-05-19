@@ -7,7 +7,7 @@ interface LayoutProps {
 function Layout({children}: LayoutProps) {
   return (
     <div
-      className="h-full w-full grid grid-cols-3 bg-cover bg-center"
+      className="h-full w-full grid grid-cols-3 bg-cover bg-center overflow-y-auto"
       style={{backgroundImage: `url(${BackgroundImage})`}}
     >
       {children}

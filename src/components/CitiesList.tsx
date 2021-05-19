@@ -1,20 +1,6 @@
-enum LocationTypes {
-  City = 'City',
-  Region = 'Region',
-  State = 'State',
-  Province = 'Province',
-  Country = 'Country',
-  Continent = 'Continent',
-}
+import {City, LocationTypes} from 'types';
 
-interface Cities {
-  title: string;
-  location_type: LocationTypes;
-  woied: number;
-  latt_long: string;
-}
-
-const mockCities: Cities[] = [
+const mockCities: City[] = [
   {
     title: 'London',
     location_type: LocationTypes.City,

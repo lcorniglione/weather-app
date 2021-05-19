@@ -1,35 +1,6 @@
-interface ConsolidatedWeather {
-  id: number;
-  weather_state_name: string;
-  weather_state_abbr: string;
-  wind_direction_compass: string;
-  created: string;
-  applicable_date: string;
-  min_temp: number;
-  max_temp: number;
-  the_temp: number;
-  wind_speed: number;
-  wind_direction: number;
-  air_pressure: number;
-  humidity: number;
-  visibility: number;
-  predictability: number;
-}
+import {Weather} from 'types';
 
-interface WheatherDetail {
-  consolidated_weather?: ConsolidatedWeather[];
-  time: string;
-  sun_rise: string;
-  sun_set: string;
-  timezone_name: string;
-  title: string;
-  location_type: string; // TODO: referenciar al otro enum ya escrito
-  woeid: number;
-  latt_long: string;
-  timezone: string;
-}
-
-const weatherDetails: WheatherDetail[] = [
+const weatherDetails: Weather[] = [
   {
     time: '2021-05-16T21:06:51.840718+01:00',
     sun_rise: '2021-05-16T05:07:01.788297+01:00',
